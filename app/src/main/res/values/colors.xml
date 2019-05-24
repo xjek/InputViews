@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="red">#cc0000</color>
+    <color name="colorDark">#424242</color>
+    <color name="white">#ffffff</color>
+
+    <color name="colorErrorInputText">@color/red</color>
+    <color name="colorNoSelectableRecord">@color/colorDark</color>
+    <color name="colorEnableInputView">@color/white</color>
+</resources>

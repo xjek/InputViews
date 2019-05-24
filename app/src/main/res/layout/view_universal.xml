@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/mainView">
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextHintInputView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorEnableInputView"
+        android:id="@+id/containerEditText">
+        <EditText
+            android:tag="editText"
+            style="@style/EditTextInputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="2dp"
+            android:paddingTop="4dp"
+            android:longClickable="false"
+            android:focusable="false"
+            android:maxLines="1"
+            android:inputType="text|textCapSentences"
+            android:layout_toStartOf="@id/containerWithButtons"/>
+
+        <LinearLayout
+            android:id="@+id/containerWithButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingEnd="4dp"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/firstButton"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="2dp"/>
+
+            <ImageView
+                android:id="@+id/secondButton"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:layout_marginStart="10dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="2dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ErrorInputText"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"/>
+</LinearLayout>
